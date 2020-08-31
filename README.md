@@ -1,5 +1,5 @@
 # es6-karma-jasmine
-Webpack + babel + jasmine
+Webpack + Babel + Karma + Jasmine
 
 git clone https://github.com/GioLop/es6-karma-jasmine.git
 
