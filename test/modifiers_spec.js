@@ -2,8 +2,8 @@ import modifiers from '../src/modifiers.js';
 
 describe("Modifiers", () => {
     beforeEach(() => {
-        const dummyElement = document.createElement('div');
-        document.getElement = jasmine.createSpy('HTML Element').and.returnValue(dummyElement);
+        const dummyElement = document.createElement('div')
+        document.getElement = jasmine.createSpy('HTML Element').and.returnValue(dummyElement)
     })
 
     it("should add open class in element", () => {
