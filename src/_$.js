@@ -4,4 +4,4 @@ const _$ = {
     copy: arr => [...arr],
     isPresent: (x,y) => x.some(x => y.includes(x))
 };
-export default _$; 
+export default _$;
