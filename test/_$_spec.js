@@ -23,11 +23,26 @@ describe("Test _$ lib", () => {
       expect(newArr).toEqual(['a', 'b', 'c', 'd']);
     });
   });
-  describe("if array has elements", ()=> {
-      it("should return true if any of the array elements is present in another array", () => {
-          const myArr = ['a','b','c']
-          const hasArr = ['b','c']
-          expect(_$.isPresent(myArr, hasArr)).toEqual(true)
-      })
+  describe("if array has elements", () => {
+    it("should return true if any of the array elements is present in another array", () => {
+      const myArr = ['a', 'b', 'c']
+      const hasArr = ['b', 'c']
+      expect(_$.isPresent(myArr, hasArr)).toEqual(true)
+    })
+  });
+  describe("isArray func", () => {
+    it("should receive any value and return true if the value is an array", () => {
+      const myArr = ['a', 'b', 'c']
+      const numb = 1
+      const string = 'string'
+      const dict = {
+        value1: 'uno',
+        value2: 'dos'
+      }
+      expect(_$.isArray(myArr)).toEqual(true)
+      expect(_$.isArray(numb)).toEqual(false)
+      expect(_$.isArray(string)).toEqual(false)
+      expect(_$.isArray(dict)).toEqual(false)
+    })
   })
 });
