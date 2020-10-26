@@ -71,9 +71,3 @@ describe('Stack', () => {
         });
     });
 });
-
-describe('Practial uses', () => {
-    it('divide by 2', () => {
-        expect()
-    });
-});

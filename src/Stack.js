@@ -5,12 +5,18 @@ class Stack {
         this.items = []
     }
 
-    push(element) {
-        this.items.push(element);
+    push(...elements) {
+        elements.forEach((element) => {
+            this.items.push(element);
+        });
     }
 
     pop() {
-        return this.items.pop();
+        if (this.size == 0) {
+            return "Underflow";
+        } else {
+            return this.items.pop();
+        }
     }
 
     peek() {
@@ -23,6 +29,14 @@ class Stack {
 
     size() {
         return this.items.length;
+    }
+
+    clear () {
+        this.items = [];
+    }
+
+    toString() {
+        return this.items.toString()
     }
 }
 
