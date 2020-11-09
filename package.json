@@ -6,7 +6,7 @@
   "scripts": {
     "start": "npm-run-all --parallel build:watch",
     "build": "webpack -p --progress --colors",
-    "build:watch": "webpack --progress --colors --watch",
+    "build:watch": "webpack --progress --watch",
     "test": "karma start"
   },
   "author": "",
@@ -19,11 +19,12 @@
     "css-loader": "^3.6.0",
     "cssnano": "^4.1.10",
     "mini-css-extract-plugin": "^0.9.0",
+    "npm-run-all": "^4.1.5",
     "postcss-loader": "^3.0.0",
     "sass": "^1.26.10",
     "sass-loader": "^9.0.2",
     "webpack": "^4.43.0",
-    "npm-run-all": "^4.1.5"
+    "webpack-cli": "^4.2.0"
   },
   "dependencies": {
     "jasmine-core": "3.5.0",
@@ -39,7 +40,8 @@
     "karma-phantomjs-launcher": "^1.0.4",
     "karma-safari-launcher": "^1.0.0",
     "karma-spec-reporter": "0.0.32",
-    "karma-webpack": "^4.0.2"
+    "karma-webpack": "^4.0.2",
+    "regenerator-runtime": "^0.13.7"
   },
   "repository": {
     "type": "git",
